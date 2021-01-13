@@ -1,0 +1,17 @@
+﻿<Window x:Class="Youtube_Downloader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Youtube_Downloader"
+        mc:Ignorable="d"
+        x:Name="mainStage"  Title="Youtube Video image Downloader" Height="530" Width="560" ResizeMode="NoResize"  WindowStartupLocation="CenterScreen" >
+    <Grid Margin="10,0,10,-6">
+        <Image x:Name="mainImage" HorizontalAlignment="Left" Height="390" Width="510" Margin="5,70,0,0" VerticalAlignment="Top"  Stretch="Fill"/>
+        <TextBox x:Name="link" HorizontalAlignment="Center" Height="27"  Margin="-85,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="430" FontSize="16" MaxLines="1" FontWeight="Bold" />
+        <Button x:Name="searchButton"  Content=" Search " HorizontalAlignment="Left" Height="27" Margin="5,40,0,0" VerticalAlignment="Top"  FontSize="16" FontWeight="Bold" Click="Button_Click" IsDefault="True" VerticalContentAlignment="Top" UseLayoutRounding="True" ScrollViewer.HorizontalScrollBarVisibility="Auto" />
+        <Button x:Name="previewButton" IsEnabled="False" Content=" Preview " HorizontalAlignment="Left" Height="27" Margin="228,40,0,0" VerticalAlignment="Top"  FontSize="16" FontWeight="Bold" VerticalContentAlignment="Top" UseLayoutRounding="True" ScrollViewer.HorizontalScrollBarVisibility="Auto" Click="PreviewButton_Click" />
+        <Button x:Name="saveButton" IsEnabled="False" Content=" Save Image " HorizontalAlignment="Left" Height="27" Margin="415,40,0,0" VerticalAlignment="Top"  FontSize="16" FontWeight="Bold" VerticalContentAlignment="Top" UseLayoutRounding="True" ScrollViewer.HorizontalScrollBarVisibility="Auto" Click="SaveButton_Click" />
+        <Button x:Name="clearButton" IsEnabled="False" Content=" Clear All " HorizontalAlignment="Left" Height="27" Margin="438,10,0,0" VerticalAlignment="Top"  FontSize="16" FontWeight="Bold" VerticalContentAlignment="Top" UseLayoutRounding="True" ScrollViewer.HorizontalScrollBarVisibility="Auto" Click="ClearButton_Click"  />
+    </Grid>
+</Window>
